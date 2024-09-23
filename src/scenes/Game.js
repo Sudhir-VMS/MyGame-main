@@ -34,7 +34,7 @@ export class Game extends Scene {
     this.setupCamera();
     this.setupInput();
     this.addStages();
-    // this.setupTimer();
+    this.setupTimer();
 
     this.events.on('pause', this.onPause, this);
     this.events.on('resume', this.onResume, this);

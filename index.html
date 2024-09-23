@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/Stag1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Find the Stag Game</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="navbar">
+        <div id="time-container">
+          <span class="label">⏱️ TIME</span>
+          <span id="time">45</span>
+        </div>
+        <div id="stags-container">
+          <div class="label">STAGS FOUND</div>
+          <div id="stag-icons">
+            <img
+              src="/assets/Stag1.png"
+              alt="Stag 1"
+              class="stag-icon"
+              id="stag-icon-1"
+            />
+            <img
+              src="/assets/Stag1.png"
+              alt="Stag 2"
+              class="stag-icon"
+              id="stag-icon-2"
+            />
+            <img
+              src="/assets/Stag1.png"
+              alt="Stag 3"
+              class="stag-icon"
+              id="stag-icon-3"
+            />
+            <img
+              src="/assets/Stag1.png"
+              alt="Stag 4"
+              class="stag-icon"
+              id="stag-icon-4"
+            />
+            <img
+              src="/assets/Stag1.png"
+              alt="Stag 5"
+              class="stag-icon"
+              id="stag-icon-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="game-container"></div>
+
+    <!-- Orientation Warning Div -->
+    <div id="orientation-warning">
+      <img src="/assets/rotate.gif" alt="Rotate Device" />
+    </div>
+
+    <!-- Game Over Modal -->
+   <!-- Game Over Modal -->
+<div id="game-over-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h2 id="game-over-message">Game Over</h2>
+    <p id="game-over-details"></p>
+    <h3 id="final-score">Final Score: 0</h3> <!-- Add score display -->
+    <p id="motivational-message"></p> <!-- Add message display -->
+  </div>
+</div>
+
+    
+    <!-- Fullscreen Button -->
+    <button id="fullscreen-button" class="fullscreen-button">Go Fullscreen</button>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
